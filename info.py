@@ -51,7 +51,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('mongodb+srv://power56381373:5MaUmK447imGP2kY@naidu143.24dslyd.mongodb.net/?retryWrites=true&w=majority&appName=naidu143', "")
+DATABASE_URI = environ.get('mongodb+srv://mfinder310:ofjqzynRIMg14xTh@cluster0.bevveef.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
@@ -66,9 +66,9 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'kingvj01') # owner username without @
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
-CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
-CLONE_DATABASE_URI = environ.get('', "") # Necessary If clone mode is true
-PUBLIC_FILE_CHANNEL = environ.get('TELUGUMOVIE01REQUSET', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
+CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
+CLONE_DATABASE_URI = environ.get('', "mongodb+srv://power56381373:waZlpuypx06akpCc@cluster0.f4mixtb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # Necessary If clone mode is true
+PUBLIC_FILE_CHANNEL = environ.get('telugumovie01request', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
@@ -133,7 +133,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
